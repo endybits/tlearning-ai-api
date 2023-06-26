@@ -1,2 +1,2 @@
 def hello():
-    return {'hi': "hello test"}
+    return {"hi": "hello test"}
