@@ -4,4 +4,4 @@ install:
 lint:
 	pylint --disable=R,C *.py
 test:
-	python -m pytest -v test_hello.py
+	python3 -m pytest -vv test_*.py
