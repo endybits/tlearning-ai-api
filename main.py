@@ -27,14 +27,6 @@ def get_corricular_grid(
     
     skills = {type_skills[0] if len(type_skills)==1 else " y ".join(type_skills)}
 
-    prompt_a = f"""Eres un experto en entrenamiento corporativo enfocado en la innovación, con más de 30 años de experiencia.
-                recientemente fuiste contratado por una empresa del sector {sector_company} en la cual se te asignó la responsabilidad 
-                de crear una malla curricular de cursos para sus empleados. 
-                El objetivo de esta formación es mejorar las habilidades de {skills} del personal de la empresa,
-                haciendo un enfoque diferencial en los niveles de cargo.
-                Crea una malla curricular de cursos teniendo en cuenta las competencias de {skills} y organízala por niveles de cargo.
-                Escribe el resultado en notación JSON."""
-    
     prompt_b = f"""Eres un experto en formación corporativa, con más de 30 años de experiencia potenciando las habilidades de {skills} para el capital humano
                 de cientos de empresas del sector {sector_company}. Recientemente fuiste contratado por una empresa de este sector,  
                 en la cual se te asignó la responsabilidad de crear una malla curricular de cursos enfocados en {skills} para sus empleados.
