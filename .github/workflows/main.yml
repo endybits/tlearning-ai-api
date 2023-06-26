@@ -20,5 +20,5 @@ jobs:
           make lint
       - name: Test with Pytest
         run: |
-          python -m pytest -vv --cov=app test_*.py
+          make test
   
