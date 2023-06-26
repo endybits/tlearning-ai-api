@@ -1,9 +1,9 @@
 import os
 import openai
+from app.core.config import OPENAI_API_KEY
 
-
-openai.api_key = "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"
-
+openai.api_key = OPENAI_API_KEY
+print
 def ai_request(prompt: str = "Cuéntame un chiste sobre organizaciones"):
     response = openai.Completion.create(
         model="text-davinci-003",
@@ -19,4 +19,3 @@ def ai_request(prompt: str = "Cuéntame un chiste sobre organizaciones"):
 response = ai_request()
 response = response["choices"][0]["text"]
 print(response)
-    

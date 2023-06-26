@@ -1,7 +1,7 @@
 import os
 import json
 
-path = './config.json'
+path = 'tlearning-ai-api/app/core/config.json'
 
 if not os.path.exists(path):
     raise Exception(f'The config file config.json is missing')
@@ -12,4 +12,3 @@ def get_config(filename: str = path):
 
 cfg = get_config()
 OPENAI_API_KEY = cfg.get('api').get('openai_apikey')
-print(OPENAI_API_KEY)
