@@ -12,3 +12,4 @@ def get_config(filename: str = path):
 
 cfg = get_config()
 OPENAI_API_KEY = cfg.get('api').get('openai_apikey')
+print(OPENAI_API_KEY)
