@@ -15,4 +15,6 @@ jobs:
       - name: Install dependencies
         run: |
           make install
-      - name: Lint with Pylint        
+      - name: Lint with Pylint
+        run: |
+          make lint
