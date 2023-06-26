@@ -1,7 +1,10 @@
 import os
 import json
 
-path = 'tlearning-ai-api/app/core/config.json'
+if os.name == 'posix':
+    path = '/etc/.config-api.json'
+else:
+    path = 'tlearning-ai-api/app/core/.config.json'
 
 if not os.path.exists(path):
     raise Exception(f'The config file config.json is missing')
